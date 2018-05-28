@@ -1,0 +1,30 @@
+{
+  "name": "codeship-api",
+  "version": "0.0.1",
+  "description": "Node.js wrapper for Codeship",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beauallison/codeship-api.git"
+  },
+  "keywords": [
+    "Codeship",
+    "Node"
+  ],
+  "author": "Beau Allison",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/beauallison/codeship-api/issues"
+  },
+  "homepage": "https://github.com/beauallison/codeship-api#readme",
+  "dependencies": {},
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.9.0",
+    "eslint": "^4.18.2",
+    "jest": "^22.4.2"
+  }
+}
