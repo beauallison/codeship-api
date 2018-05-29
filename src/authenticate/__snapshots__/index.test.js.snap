@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`authenticate() should authenticate with valid credentials 1`] = `
+Object {
+  "expiry": 1504275032,
+  "organizations": Map {
+    "Codeship" => Object {
+      "scopes": Array [
+        "build.read",
+        "project.read",
+      ],
+      "uuid": "dc37c39f-731e-4100-b8bf-69dae9eb14aa",
+    },
+    "Codeship Test Org" => Object {
+      "scopes": Array [
+        "build.read",
+        "build.write",
+        "project.read",
+        "project.write",
+      ],
+      "uuid": "dc37c39f-731e-4100-b8bf-69dae9eb14ab",
+    },
+  },
+  "token": "eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiJ9.eyJpZCI6IjYzMjIwNzg0YzUzODA3ZjVmZTc2Yjg4ZjZkNjdlMmExZTIxODlhZTEiLCJjbGllbnRfaWQiOiJUZXN0IENsaWVudCBJRCIsInVzZXJfaWQiOm51bGwsImV4cGlyZXMiOjEzODAwNDQ1NDIsInRva2VuX3R5cGUiOiJiZWFyZXIiLCJzY29wZSI6bnVsbH0.PcC4k8Q_etpU-J4yGFEuBUdeyMJhtpZFkVQ__sXpe78eSi7xTniqOOtgfWa73Y4sj5Npta8xPuDglH8Fueh_APZ53wGCiRE1P4nT4APQCOTbgjgCNXwjmP8znk9F76ID2WxThaMbmpsTTEkuyyUYQKCCdxlIcSbVvcLZUGKZ6-g",
+}
+`;
