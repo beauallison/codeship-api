@@ -1,17 +1,17 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`authenticate() should authenticate with valid credentials 1`] = `
+exports[`routes/authenticate() should authenticate with valid credentials 1`] = `
 Object {
   "expiry": 1504275032,
-  "organizations": Map {
-    "Codeship" => Object {
+  "organizations": Object {
+    "Codeship": Object {
       "scopes": Array [
         "build.read",
         "project.read",
       ],
       "uuid": "dc37c39f-731e-4100-b8bf-69dae9eb14aa",
     },
-    "Codeship Test Org" => Object {
+    "Codeship Test Org": Object {
       "scopes": Array [
         "build.read",
         "build.write",

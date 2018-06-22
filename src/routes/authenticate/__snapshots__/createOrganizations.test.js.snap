@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`authenticate/createOrganizations() should create organizations 1`] = `
-Map {
-  "Codeship" => Object {
+exports[`routes/authenticate/createOrganizations() should create organizations 1`] = `
+Object {
+  "Codeship": Object {
     "scopes": Array [
       "build.read",
       "project.read",
     ],
     "uuid": "dc37c39f-731e-4100-b8bf-69dae9eb14aa",
   },
-  "Codeship Test Org" => Object {
+  "Codeship Test Org": Object {
     "scopes": Array [
       "build.read",
       "build.write",
@@ -21,4 +21,4 @@ Map {
 }
 `;
 
-exports[`authenticate/createOrganizations() should return an empty Map on missing data 1`] = `Map {}`;
+exports[`routes/authenticate/createOrganizations() should return an empty Map on missing data 1`] = `Object {}`;

@@ -19,8 +19,17 @@
   "bugs": {
     "url": "https://github.com/beauallison/codeship-api/issues"
   },
+  "jest": {
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "_mocks_"
+    ]
+  },
   "homepage": "https://github.com/beauallison/codeship-api#readme",
-  "dependencies": {},
+  "dependencies": {
+    "axios": "^0.18.0",
+    "lodash": "^4.17.10"
+  },
   "devDependencies": {
     "eslint-config-airbnb-base": "^12.1.0",
     "eslint-plugin-import": "^2.9.0",

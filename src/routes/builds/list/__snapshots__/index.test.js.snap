@@ -1,0 +1,86 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`routes/builds/list() should return a list of builds 1`] = `
+Array [
+  Object {
+    "allocated_at": null,
+    "commit_message": "Triggering failed build",
+    "commit_sha": "575a1521fff1466c3ed9fae9d390e0ffffffffff",
+    "finished_at": "2017-12-07T22:17:51.280Z",
+    "links": Object {
+      "pipelines": "https://api.codeship.com/v2/organizations/721cea10-b695-0134-5b94-000000000000/projects/7b3596c0-560e-0135-5b18-000000000000/builds/20b4a690-6a03-0135-d6ec-000000000000/pipelines",
+    },
+    "organization_uuid": "721cea10-b695-0134-5b94-000000000000",
+    "project_uuid": "7b3596c0-560e-0135-5b18-000000000000",
+    "queued_at": "2017-12-07T22:16:56.670Z",
+    "ref": "heads/master",
+    "status": "failed",
+    "username": "dennisnewel",
+    "uuid": "20b4a690-6a03-0135-d6ec-000000000000",
+  },
+  Object {
+    "allocated_at": null,
+    "commit_message": "Update to API documentation",
+    "commit_sha": "119bef0f9bd1421b9e2fbf9b05f760ffffffffff",
+    "finished_at": "2017-08-23T07:26:01.877Z",
+    "links": Object {
+      "pipelines": "https://api.codeship.com/v2/organizations/721cea10-b695-0134-5b94-000000000000/projects/7b3596c0-560e-0135-5b18-000000000000/builds/fc67c7b0-5911-0135-7f99-000000000000/pipelines",
+    },
+    "organization_uuid": "721cea10-b695-0134-5b94-000000000000",
+    "project_uuid": "7b3596c0-560e-0135-5b18-000000000000",
+    "queued_at": "2017-08-23T07:24:41.327Z",
+    "ref": "heads/master",
+    "status": "success",
+    "username": "dennisnewel",
+    "uuid": "fc67c7b0-5911-0135-7f99-000000000000",
+  },
+  Object {
+    "allocated_at": null,
+    "commit_message": "Doing stuff i'm not supposed to",
+    "commit_sha": "05f9a643d533c3beeb1ccf3d321863ffffffffff",
+    "finished_at": "2017-08-01T18:03:57.742Z",
+    "links": Object {
+      "pipelines": "https://api.codeship.com/v2/organizations/721cea10-b695-0134-5b94-000000000000/projects/7b3596c0-560e-0135-5b18-000000000000/builds/2acd9480-5911-0135-7f99-000000000000/pipelines",
+    },
+    "organization_uuid": "721cea10-b695-0134-5b94-000000000000",
+    "project_uuid": "7b3596c0-560e-0135-5b18-000000000000",
+    "queued_at": "2017-08-01T18:02:02.430Z",
+    "ref": "heads/master",
+    "status": "infrastructure_failure",
+    "username": "dennisnewel",
+    "uuid": "2acd9480-5911-0135-7f99-000000000000",
+  },
+  Object {
+    "allocated_at": null,
+    "commit_message": "Trying something out",
+    "commit_sha": "36a4ee346c57dbf9352dbe2aa14c1dffffffffff",
+    "finished_at": "2017-08-01T17:58:51.428Z",
+    "links": Object {
+      "pipelines": "https://api.codeship.com/v2/organizations/721cea10-b695-0134-5b94-000000000000/projects/7b3596c0-560e-0135-5b18-000000000000/builds/8d1187e0-560f-0135-e471-000000000000/pipelines",
+    },
+    "organization_uuid": "721cea10-b695-0134-5b94-000000000000",
+    "project_uuid": "7b3596c0-560e-0135-5b18-000000000000",
+    "queued_at": "2017-08-01T17:58:38.650Z",
+    "ref": "heads/dennis",
+    "status": "success",
+    "username": "Dennis Newel",
+    "uuid": "8d1187e0-560f-0135-e471-000000000000",
+  },
+  Object {
+    "allocated_at": null,
+    "commit_message": "Captain Underpants to the rescue",
+    "commit_sha": "36a4ee346c57dbf9352dbe2aa14c1dffffffffff",
+    "finished_at": "2017-08-01T17:35:28.839Z",
+    "links": Object {
+      "pipelines": "https://api.codeship.com/v2/organizations/721cea10-b695-0134-5b94-000000000000/projects/7b3596c0-560e-0135-5b18-000000000000/builds/118dcb40-560f-0135-e471-000000000000/pipelines",
+    },
+    "organization_uuid": "721cea10-b695-0134-5b94-000000000000",
+    "project_uuid": "7b3596c0-560e-0135-5b18-000000000000",
+    "queued_at": "2017-08-01T17:34:47.331Z",
+    "ref": "heads/master",
+    "status": "success",
+    "username": "dennisnewel",
+    "uuid": "118dcb40-560f-0135-e471-000000000000",
+  },
+]
+`;
