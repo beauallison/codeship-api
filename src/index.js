@@ -11,10 +11,16 @@ module.exports = class Codeship {
     Object.assign(this, res);
   }
 
+  async refresh() {
+    await this.populateProjects();
+    await this.populateBuilds();
+  }
+
   async forEachProject(fn) {
     return Promise.all(_.map(this.organizations, async (organization, organizationName) =>
       fn(organizationName, organization)));
   }
+
   populateProjects() {
     const fn = async (organizationName, { uuid }) => {
       const results = await projects.list({ token: this.token, organization: uuid });
@@ -33,5 +39,13 @@ module.exports = class Codeship {
       }));
 
     return this.forEachProject(fn);
+  }
+
+  buildStop(args) {
+    return builds.stop({ token: this.token, ...args });
+  }
+
+  buildRestart(args) {
+    return builds.restart({ token: this.token, ...args });
   }
 };
