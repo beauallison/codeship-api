@@ -53,7 +53,7 @@ const Codeship = require('codeship');
   //   },
   // },
   // "token": "eyJ0eXAi...",
-});
+})();
 ```
 
 ### Refresh
