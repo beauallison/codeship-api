@@ -6,14 +6,27 @@ module.exports = class Codeship {
     this.credentials = credentials;
   }
 
+  async updateBuilds() {
+    await this.populateProjects();
+    await this.populateBuilds();
+  }
+
   async authenticate() {
     const res = await authenticate(this.credentials);
     Object.assign(this, res);
   }
 
   async refresh() {
-    await this.populateProjects();
-    await this.populateBuilds();
+    try {
+      return await this.updateBuilds();
+    } catch (err) {
+      if (this.token && !this.reauthenciated) {
+        this.reauthenciated = true;
+        await this.authenticate();
+        return this.refresh();
+      }
+      throw err;
+    }
   }
 
   async forEachProject(fn) {

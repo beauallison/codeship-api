@@ -1,7 +1,11 @@
 const Codeship = require('./index');
 
 describe('Codeship', () => {
-  const codeship = new Codeship({ username: 'test', password: 'test' });
+  let codeship;
+  beforeEach(async () => {
+    codeship = new Codeship({ username: 'test', password: 'test' });
+    await codeship.authenticate();
+  });
 
   it('should authenticate', async () => {
     await codeship.authenticate();
@@ -11,6 +15,13 @@ describe('Codeship', () => {
   it('should refresh', async () => {
     await codeship.refresh();
     expect(codeship).toMatchSnapshot();
+  });
+
+  it('should attempt reauthentication after token expiration', async () => {
+    codeship.updateBuilds = () => Promise.reject(new Error(401));
+    const spy = jest.spyOn(codeship, 'authenticate');
+    await expect(codeship.refresh()).rejects.toThrowError(/401/);
+    expect(spy).toHaveBeenCalled();
   });
 
   const build = {
