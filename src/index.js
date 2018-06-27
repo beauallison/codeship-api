@@ -55,10 +55,10 @@ module.exports = class Codeship {
   }
 
   buildStop(args) {
-    return builds.stop({ token: this.token, ...args });
+    return builds.stop(Object.assign(args, { token: this.token }));
   }
 
   buildRestart(args) {
-    return builds.restart({ token: this.token, ...args });
+    return builds.restart(Object.assign(args, { token: this.token }));
   }
 };

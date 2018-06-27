@@ -1,8 +1,8 @@
 # Codeship API
 
-Promise based wrapper for the Codeship V2 API
-
 ![Build Status][badgeBuild] ![Coverage Status][badgeCov]
+
+Promise based wrapper for the Codeship V2 API
 
 ## V2 API - Required Access
 
