@@ -1,7 +1,5 @@
 const build = require('./');
 
-jest.mock('axios', () => require('./_mocks_/axios')); // eslint-disable-line global-require
-
 describe('routes/builds/stop()', () => {
   it('should stop a build', async () => {
     const res = await build({

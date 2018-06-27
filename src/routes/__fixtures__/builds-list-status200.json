@@ -1,6 +1,6 @@
 {
   "status": 200,
-  "data": {
+  "response": {
     "builds": [
       {
         "allocated_at": null,
