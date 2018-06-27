@@ -1,6 +1,6 @@
 {
   "name": "codeship-api",
-  "version": "0.0.1",
+  "version": "0.1.0",
   "description": "Node.js wrapper for Codeship",
   "main": "index.js",
   "scripts": {
@@ -12,7 +12,8 @@
   },
   "keywords": [
     "Codeship",
-    "Node"
+    "CD",
+    "CI"
   ],
   "author": "Beau Allison",
   "license": "MIT",
