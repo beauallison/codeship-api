@@ -11,7 +11,7 @@ V2 of the Codeship API requires a dedicated _codeship.com_ account to access; th
 - Third party authentication services - Github, Gitlab, Bitbucket etc
 - Accounts with 2FA
 
-For each project where access is required the _codeship.com_ must be in a respective Team for that project. For further information refer to the [Codeship documentation][codeshipAuth].
+For each project where access is required the project must be in a respective Team for that project. For further information refer to the [Codeship documentation][codeshipAuth].
 
 ## Install
 
@@ -91,4 +91,4 @@ await codeship.restartBuild(build);
 <!-- Links -->
 [codeshipAuth]: https://apidocs.codeship.com/v2/authentication
 [badgeBuild]: https://app.codeship.com/projects/82a41380-5c65-0136-faf2-122d0cdfbe1f/status?branch=master
-[badgeCov]: https://
+[badgeCov]: https://coveralls.io/repos/github/beauallison/codeship-api/badge.svg?branch=master
